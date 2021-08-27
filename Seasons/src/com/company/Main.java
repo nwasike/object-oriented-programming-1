@@ -7,7 +7,7 @@ public class Main {
         YearRange myFirstRange = new YearRange(1314, 2014);
         myFirstRange.setRangeType(1);
 
-        //Get all leap years.
+        //Get all leap years
         YearRange mySecondRange = new YearRange(1100, 3150);
         mySecondRange.setRangeType(2);
 
@@ -16,12 +16,12 @@ public class Main {
         myThirdRange.setRangeType(3);
 
         System.out.println("List of all years divisible by " + myFirstRange.getFirstDivisor() + " and " + myFirstRange.getSecondDivisor());
-        // myFirstRange.printYears();
+        myFirstRange.printYears();
 
         System.out.println("List of all leap years between " + mySecondRange.getFirstYear() + " and " + mySecondRange.getSecondYear());
-        // mySecondRange.printYears();
+        mySecondRange.printYears();
 
         System.out.println("List of all Olympic years between " + myThirdRange.getFirstYear() + " and " + myThirdRange.getSecondYear() + " that are divisible by " + myThirdRange.getFirstDivisor());
-        //myThirdRange.printYears();
+        myThirdRange.printYears();
     }
 }
